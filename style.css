@@ -283,6 +283,7 @@ nav .icon-close{
 /*********|About|********/
 #about {
     background:white;
+    overflow: hidden;
 }
 #about .container{
     margin: 0;
@@ -592,7 +593,7 @@ footer .social a:hover {
 @media (min-width: 1023px){
    
     .section{
-        padding: 9rem 0;  
+        padding: 8rem 0;  
     }
     .section header,
     #testimonials header{
@@ -651,17 +652,9 @@ footer .social a:hover {
     /*about*/
     #about .container{
         grid-auto-flow: column;
-        justify-content:space-between;
         margin: 0 auto;
     }
-    #about .text{
-        order: 0;
-        text-align:left;
 
-    }
-    #about .image{
-        order: 0;
-    }
     /*services*/
     .cards{
        grid-template-columns: 1fr 1fr 1fr;
@@ -760,14 +753,10 @@ footer .social a:hover {
         margin-left: auto;
         margin-right: auto;
 
-
-
     }
     #about .image::before{
-     
-       
-    
-        
+        top: -15.3%;
+        left:-25%;
     }
     
     
@@ -797,5 +786,46 @@ footer .social a:hover {
 }
 /*medium divices:787>*/
 @media (min-width: 787px){
+    .section {
+        padding: 4rem 0;
+    }
+    .section header,#testimonials header{
+        max-width:32rem;
+        text-align:center;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .btn{
+        height:3.125rem;
+    }
+    main{
+        margin-top:5.5rem;
+        
+    }
+    #home .image{
+     
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    #about .image{
+       
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    #about .image::before{
+        top: -10.3%;
+        left:-15%;
+    }
+    .cards{
+      
+     }
+     .card{
+         padding-left: 3rem;
+         padding-right: 3rem;
+     }
+     
+
 
 }
